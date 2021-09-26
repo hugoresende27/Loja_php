@@ -1,0 +1,17 @@
+{
+    "name": "hugo/loja_php",
+    "description": "Loja online em PHP",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Hugo Resende",
+            "email": "hugoresende27@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "core\\": "core/"
+        }
+    }
+}
