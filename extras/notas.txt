@@ -1,0 +1,5 @@
+MVC
+
+Model->     - dados/base de dados (neste projeto não existe model)
+View ->     - Layout + html + css + ...
+Controller->- regras de negócio
