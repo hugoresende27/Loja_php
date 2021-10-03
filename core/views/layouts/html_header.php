@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
 
-    <title>Document</title>
+    <title> <?= $titulo ?> </title>     <!--var $titulo no Main.php em /controladores -->
 </head>
 <body>
     

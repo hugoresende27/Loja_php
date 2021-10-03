@@ -4,16 +4,16 @@ namespace core\classes;
 
 use Exception;
 
-class Functions{
+class Store{
 
     public function teste(){
         echo "OLA";
     }
 
 //===============================================================================
-    public static function Layout($estruturas, $dados= null)
+    public static function Layout($estruturas, $dados= null)//verifica se estruturas é um array
     {
-        //verifica se estruturas é um array
+        
         if (!is_array($estruturas))
         {
             throw new Exception( "Coleção de estruturas inválida!");
@@ -33,7 +33,11 @@ class Functions{
             include("../core/views/$estrutura.php");
         }
     }
-
+//===============================================================================
+    public static function clienteLogado()//verifica se existe um cliente com sessão
+    {
+        return isset($_SESSION['cliente']); //vai verificar a SESSION se existe um cliente logado, retorna true ou false
+    }
 }
 
 /*
