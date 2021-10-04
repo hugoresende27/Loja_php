@@ -2,6 +2,8 @@
 
 namespace core\classes;
 
+//$_SESSION['cliente']=1;     //simular q existe um login na sessão
+
 use Exception;
 
 class Store{

@@ -4,6 +4,7 @@
 $rotas= [
     'inicio' => 'main@index',
     'loja' => 'main@loja',
+    'carrinho'=> 'main@carrinho',
     //'carrinho'=>'loja@carrinho'     //'o q aparece na query string @ assinatura do q é tratado
 ];
 

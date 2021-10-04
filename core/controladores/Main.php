@@ -16,10 +16,7 @@ class Main{
         */
         //$clientes=['hugo','rita','lola','pepe','fred'];
 
-        $dados=[
-            'titulo' => APP_NAME.' '.APP_VERSION,
-            
-        ];
+   
 
         Store::Layout([
             'layouts/html_header',
@@ -28,13 +25,39 @@ class Main{
             'layouts/footer',
             'layouts/html_footer',
 
-        ], $dados);
+        ], );
     }
 
 
 //===============================================================================
     public function loja()
     {
-        echo "LOJA!!!";
+        //apresenta a página da loja
+      
+
+        Store::Layout([
+            'layouts/html_header',
+            'layouts/header',
+            'loja',
+            'layouts/footer',
+            'layouts/html_footer',
+
+        ],);
     }
+
+//===============================================================================
+public function carrinho()     
+{
+    //apresenta a página da loja
+    
+
+    Store::Layout([
+        'layouts/html_header',
+        'layouts/header',
+        'carrinho',              //'carrinho'=> 'main@carrinho'
+        'layouts/footer',
+        'layouts/html_footer',
+
+    ],);
+}
 }
